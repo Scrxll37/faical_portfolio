@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body{
+  display: grid;
+  height: 100%;
+  
+  width: 100%;
+  place-items: center;
+   background-image: url('background.png');
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+}
+::selection{
+  background: #4158d0;
+  color: #fff;
+}
+.forms{
+  width: 500px;
+  background: #fff;
+  zoom: 140%;
+
+  border-radius: 80px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.forms .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.forms form{
+  padding: 10px 30px 50px 30px;
+}
+.forms form .input-box{
+  height: 90px;
+  width: 100%;
+  margin-top: 30px;
+
+  position:relative;
+}
+.forms form .input-box input{
+  height: 85%;
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 1px solid rgb(185, 43, 189);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.forms form .input-box input:focus,
+form .input-box input:valid{
+  border-color: #4158d0;
+}
+.forms form .input-box label{
+  position: absolute;
+  top: 20%;
+  left: 20px;
+  color: #9243ce;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .input-box input:focus ~ label,
+form .input-box input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 50px;
+  height: 50px;
+  background: red;
+}
+form .content label{
+  color: #262626;
+  user-select: none;
+  padding-left: 50px;
+}
+form .content .pass-link{
+  color: "";
+}
+form .input-box input[type="button"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.3s ease;
+}
+form .input-box input[type="button"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 767px) {
+    .forms{
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.forms .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.forms form{
+  padding: 10px 30px 50px 30px;
+}
+.forms form .input-box{
+  height: 80px;
+  width: 100%;
+  margin-top: 30px;
+
+  position:relative;
+}
+.forms form .input-box input{
+  height: 85%;
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 1px solid rgb(185, 43, 189);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.forms form .input-box input:focus,
+form .input-box input:valid{
+  border-color: #4158d0;
+}
+.forms form .input-box label{
+  position: absolute;
+  top: 20%;
+  left: 20px;
+  color: #9243ce;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+  }
+
+
+
+  @media (max-width: 730px) {
+    .forms{
+        width: 800px;
+        background: #fff;
+        zoom: 50%;
+
+        border-radius: 80px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+      }
+  }
